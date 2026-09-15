@@ -14,3 +14,11 @@ console.log(greetingE1);
 let greetingE2 = `Hello, my name is ${name}`;
 
 console.log(greetingE2);
+
+
+//E3
+
+let exotic = "Esperanto estas ekzotika lingvo"
+
+console.log(exotic)
+console.log(exotic.length);
