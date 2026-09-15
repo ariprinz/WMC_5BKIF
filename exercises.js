@@ -57,3 +57,18 @@ function add(num1, num2) {
 
 console.log(add(5,3));
 console.log(add("5", "3"));
+
+
+//E3
+
+function subtract(num1, num2) {
+    if (typeof num1 === "number" && typeof num2 === "number") {
+        return num1 - num2;
+    }
+    else {
+        return null;
+    }
+}
+
+console.log(subtract(5,3));
+console.log(subtract("5", "3"));
