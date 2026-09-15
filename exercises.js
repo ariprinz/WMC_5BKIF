@@ -72,3 +72,65 @@ function subtract(num1, num2) {
 
 console.log(subtract(5,3));
 console.log(subtract("5", "3"));
+
+
+
+
+//Objects
+
+
+//E1
+
+const person = {
+    name: "Ari",
+    age: 27,
+    isStudent: true,
+};
+
+console.log(person);
+
+
+//E2
+
+const game = {
+    playerName: "Ari",
+    score: 99,
+    rank: 24,
+    isAlive: true,
+    //E3
+    updateScore: function(newScore) {
+        this.score = newScore;
+    },
+    reset: function() {
+        this.score = 0;
+        this.rank = 0;
+        this.isAlive = true;
+    },
+};
+
+//E2 Test
+console.log(game);
+
+//E3 Test
+console.log(game.updateScore(100));
+console.log(game);
+console.log(game.reset());
+console.log(game);
+
+
+//E4
+
+function createPerson(name, age) {
+    if (typeof name === "string" && typeof age === "number") {
+        return {
+            name: name,
+            age: age,
+        }
+    }
+    else {
+        return null;
+    }
+}
+
+console.log(createPerson("John", 25));
+console.log(createPerson(25, "John"));
