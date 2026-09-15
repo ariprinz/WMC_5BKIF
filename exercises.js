@@ -134,3 +134,32 @@ function createPerson(name, age) {
 
 console.log(createPerson("John", 25));
 console.log(createPerson(25, "John"));
+
+
+
+//Arrays
+
+
+//E1
+
+let numbers = [1, 2, 3, 4, 5];
+
+console.log(numbers);
+
+
+//E2
+
+numbers.push(6);
+
+console.log(numbers);
+
+
+//E3
+
+function sum(numbers) {
+    return numbers.reduce((total, current) => total + current, 0);
+}
+
+console.log(sum([1, 2, 3]));
+console.log(sum([]));
+console.log(sum(["1", "2", "3"]));
